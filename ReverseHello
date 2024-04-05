@@ -1,0 +1,7 @@
+def mirrorstring(s):
+  if len(s)==1:
+    return s
+  else:
+    return s[-1] + mirrorstring(s[:-1])
+
+mirrorstring('hello')
